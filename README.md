@@ -17,7 +17,7 @@ cd win-radio-master
 
 * Double click `win-radio-master.bat`
 
-* Chose directory to save streams, config will be saved in %userprofile%\radio_save_dir, delete this config if any trouble and rerun script
+* Chose directory to save streams, config will be saved in `%userprofile%\radio_save_dir`, delete this config if any trouble and rerun script
   
 ![radio_records.png](img/browse_folder.png)
 
