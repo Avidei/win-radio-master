@@ -19,15 +19,11 @@ cd win-radio-master
 
 * Chose directory to save streams, config will be saved in `%userprofile%\radio_save_dir`, delete this config if any trouble and rerun script
   
-![radio_records.png](img/browse_folder.png)
-
 * Script will open download page, if you don't have a streamripper installed on your computer
 
 * Close Command Prompt, download and install `streamripper-windows-installer-{any_version}.exe` on your computer
 
 * Rerun script and choose radiostation, it should open stream in your default browser and run job to save your stream in command prompt
-  
-![radio_records.png](img/in_action.png)
 
 * To stop the program just close command prompt
 
