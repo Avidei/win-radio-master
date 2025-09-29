@@ -27,7 +27,7 @@ cd win-radio-master
 
 * Rerun script and choose radiostation, it should open stream in your default browser and run job to ripping in command prompt
   
-![radio_records.png](img/ripping.png)
+![radio_records.png](img/in_action.png)
 
 * To stop the programm just close command prompt
 
