@@ -43,7 +43,7 @@ echo [a] HardCoreRadio.nl - Hard Core
 echo [b] anotherplanet.fm ambient radio - English
 echo [c] Ambient Art Sound - Take an ambient break
 echo [d] 181.FM - Bluegrass
-echo [e] Country - Dustin Lynch - Ridin’ Roads
+echo [e] Country - Dustin Lynch - Ridin Roads
 echo.
 echo [0] Exit
 echo.
