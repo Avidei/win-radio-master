@@ -33,7 +33,7 @@ cd win-radio-master
 
 > [!Note]
 > To add new radiostation create new row like `echo [{symbol}] {name of radiostation}` in section `::TITLE`<br>
-> Add {symbol} to the end in section `::CHECK`<br>
+> Add same {symbol} to the end in section `::CHECK`<br>
 > Add new row like `IF %startradio%=={symbol} SET url={radiostation_url}` in section `::URL`
 
 ### Known issues
