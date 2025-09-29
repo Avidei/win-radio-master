@@ -10,7 +10,7 @@ Based on [streamripper](https://github.com/streamripper/streamripper)
 
 * Download project
 ```
-git clone
+git clone https://github.com/Avidei/win-radio-master.git
 cd win-radio-master
 ```
 
