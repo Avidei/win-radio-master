@@ -1,4 +1,4 @@
-# win-radio-master
+## win-radio-master
 Listen and download standard internet radio streams<br>
 Command-line interpreter script for windows x32/x64 <br>
 Based on [streamripper](https://github.com/streamripper/streamripper)
@@ -6,7 +6,7 @@ Based on [streamripper](https://github.com/streamripper/streamripper)
 > [!Warning]
 > Use this one only for download content not protected by copyright
 
-## Use:
+### Use:
 
 * Download project
 ```
@@ -31,7 +31,7 @@ cd win-radio-master
 > Add {symbol} to the end in section `::CHECK`<br>
 > Add new row like `IF %startradio%=={symbol} SET url={radiostation_url}` in section `::URL`
 
-## Known issues
+### Known issues
 
 * If you got `error -6`
 
