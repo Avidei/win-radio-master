@@ -1,6 +1,6 @@
 ## win-radio-master
 
-Command-line interpreter script for windows x32/x64 based on [streamripper](https://github.com/streamripper/streamripper) <br>
+Simple script for windows x32/x64 command-line interpreter based on [streamripper](https://github.com/streamripper/streamripper) <br>
 
 ![radio_records.png](img/radio_records.png)
 
