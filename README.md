@@ -29,7 +29,7 @@ cd win-radio-master
   
 ![radio_records.png](img/in_action.png)
 
-* To stop the programm just close command prompt
+* To stop the program just close command prompt
 
 > [!Note]
 > To add new radiostation create new row like `echo [{symbol}] {name of radiostation}` in section `::TITLE`<br>
