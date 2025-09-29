@@ -23,7 +23,7 @@ cd win-radio-master
 
 * Script will open download page, if you don't have a streamripper installed on your computer
 
-* Close Command Prompt, download and install streamripper-windows-installer-{any_version}.exe on your computer
+* Close Command Prompt, download and install `streamripper-windows-installer-{any_version}.exe` on your computer
 
 * Rerun script and choose radiostation, it should open stream in your default browser and run job to ripping in command prompt
   
