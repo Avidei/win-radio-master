@@ -38,7 +38,7 @@ cd win-radio-master
 
 ### Known issues
 
-* If you got `error -6`
+* `error -6`
 
 ```console
 error -6 [SR_ERROR_CANT_RESOLVE_HOSTNAME]
