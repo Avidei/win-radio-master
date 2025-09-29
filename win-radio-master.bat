@@ -5,7 +5,7 @@
 echo var objFolder = (new ActiveXObject("Shell.Application")).BrowseForFolder(0, "Specify the directory to save the files", 0);>>browse_dir.js
 echo if (objFolder) WScript.StdOut.Write(objFolder.Self.Path);>>browse_dir.js
 
-title RADIO RECORDS
+title win-radio-master
 del /f /s /q %tmp%\*.m3u
 cls
 IF NOT EXIST "%programfiles(x86)%\streamripper\streamripper.exe" start "get" /wait "http://sourceforge.net/project/showfiles.php?group_id=6172&package_id=258843"
