@@ -6,7 +6,7 @@ Based on [streamripper](https://github.com/streamripper/streamripper)
 > [!Warning]
 > Use this one only for download content not protected by copyright
 
-## USE:
+## Use:
 
 * Download project
 ```
