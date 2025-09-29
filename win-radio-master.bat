@@ -73,10 +73,6 @@ FOR %%G IN ("1"
 
 exit
 
-
-
-echo.
-
 :start
 SET tm=%time%
 SET tm=%tm::=.%
