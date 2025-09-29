@@ -1,6 +1,6 @@
 # win-radio-master
-Listen and download standard internet radio streams
-Command-line interpreter script for windows x32/x64 
+Listen and download standard internet radio streams<br>
+Command-line interpreter script for windows x32/x64 <br>
 Based on [streamripper](https://github.com/streamripper/streamripper)
 
 > [!Warning]
@@ -27,8 +27,8 @@ cd win-radio-master
 * To stop the programm just close command prompt
 
 > [!Note]
-> To add new radiostation create new row like `echo [{symbol}] {name of radiostation}` in section `::TITLE`
-> Add {symbol} to the end in section `::CHECK`
+> To add new radiostation create new row like `echo [{symbol}] {name of radiostation}` in section `::TITLE`<br>
+> Add {symbol} to the end in section `::CHECK`<br>
 > Add new row like `IF %startradio%=={symbol} SET url={radiostation_url}` in section `::URL`
 
 ## Known issues
