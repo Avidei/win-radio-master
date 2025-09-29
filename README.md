@@ -41,7 +41,7 @@ bye..
 shutting down
 ```
 
-This problem is caused by the user-agent. 
+This problem is caused by the user-agent. <br>
 If you use for instance VLC ("VLC/2.2.6 LibVLC/2.2.6"), the stream works
 
 ## License
