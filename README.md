@@ -9,7 +9,7 @@ Based on [streamripper](https://github.com/streamripper/streamripper)
 ### Use:
 
 * Download project
-```
+```console
 git clone https://github.com/Avidei/win-radio-master.git
 cd win-radio-master
 ```
@@ -35,7 +35,7 @@ cd win-radio-master
 
 * If you got `error -6`
 
-```
+```console
 error -6 [SR_ERROR_CANT_RESOLVE_HOSTNAME]
 bye..
 shutting down
