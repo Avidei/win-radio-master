@@ -1,7 +1,7 @@
 ## win-radio-master
-Listen and download standard internet radio streams<br>
-Command-line interpreter script for windows x32/x64 <br>
-Based on [streamripper](https://github.com/streamripper/streamripper)
+
+Command-line interpreter script for windows x32/x64 based on [streamripper](https://github.com/streamripper/streamripper) <br>
+
 
 > [!Warning]
 > Use this one only for download content not protected by copyright
