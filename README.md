@@ -18,7 +18,7 @@ cd win-radio-master
 
 * Chose directory to save streams, config will be saved in %userprofile%\radio_save_dir, delete this config if any trouble and rerun script
 
-* If you don't have a streamripper installed on your computer - script will open it's download page
+* Script will open download page, if you don't have a streamripper installed on your computer
 
 * Close Command Prompt, download and install streamripper-windows-installer-{any_version}.exe on your computer
 
