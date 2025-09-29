@@ -2,7 +2,7 @@
 
 Command-line interpreter script for windows x32/x64 based on [streamripper](https://github.com/streamripper/streamripper) <br>
 
-![radio_records.png](https://github.com/Avidei/win-radio-master/img/radio_records.png)
+![radio_records.png](img/radio_records.png)
 
 > [!Warning]
 > Use this one only for download content not protected by copyright
