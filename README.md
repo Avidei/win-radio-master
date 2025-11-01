@@ -1,42 +1,70 @@
-## win-radio-master
+# 🎧 win-radio-master
 
-Simple script for windows x32/x64 command-line interpreter based on [streamripper](https://github.com/streamripper/streamripper) <br>
+A simple Windows (x32/x64) command-line script for recording internet radio streams — powered by [**streamripper**](https://github.com/streamripper/streamripper).  
 
 ![radio_records.png](img/radio_records.png)
 
-> [!Warning]
-> Use this one only for download content not protected by copyright
+> [!WARNING]
+> ⚠️ Use this script **only** for downloading content *not protected by copyright*.
 
-### Use:
+---
 
-* Download project
-```console
+## 🚀 Features
+- Works on both **Windows x32/x64**
+- Uses **streamripper** for downloading radio streams
+- Saves configuration automatically to `%userprofile%\radio_save_dir`
+- Supports adding custom radio stations
+
+---
+
+## 🧭 How to Use
+
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/Avidei/win-radio-master.git
 cd win-radio-master
 ```
 
-* Double click `win-radio-master.bat`
+### 2️⃣ Run the script
+```bash
+Double-click win-radio-master.bat
+```
 
-* Chose directory to save streams, config will be saved in `%userprofile%\radio_save_dir`, delete this config if any trouble and rerun script
-  
-* Script will open download page, if you don't have a streamripper installed on your computer
+### 3️⃣ Configure and record
 
-* Close Command Prompt, download and install `streamripper-windows-installer-{any_version}.exe` on your computer
+* Choose a directory to save streams (config is stored in `%userprofile%\radio_save_dir`)  
+  → Delete this config if any issue occurs and rerun the script
 
-* Rerun script and choose radiostation, it should open stream in your default browser and run job to save your stream in command prompt
+* If you don’t have **streamripper**, the script will open its download page
 
-* To stop the program just close command prompt
+* Close Command Prompt, download and install `streamripper-windows-installer-{any_version}.exe`
 
-> [!Note]
-> To add new radiostation create new row like `echo [{symbol}] {name of radiostation}` in section `::TITLE`<br>
-> Add same {symbol} to the end in section `::CHECK`<br>
-> Add new row like `IF %startradio%=={symbol} SET url={radiostation_url}` in section `::URL`
+* Rerun the script and select a radio station  
+  → It will open in your default browser and start recording automatically
 
-### Known issues
+* To stop the program — just close the Command Prompt window
 
-* `error -6`
 
-```console
+## 🧩 Add Custom Radio Stations
+
+> [!NOTE]  
+> To add a new radio station, edit your `.bat` file:
+> ```batch
+> ::TITLE
+> echo [{symbol}] {name of radiostation}
+>
+> ::CHECK
+> Add {symbol} to the end of section
+>
+> ::URL
+> IF %startradio%=={symbol} SET url={radiostation_url}
+> ```
+
+
+## ⚠️ Known Issues
+
+### ❌ `error -6`
+```text
 error -6 [SR_ERROR_CANT_RESOLVE_HOSTNAME]
 bye..
 shutting down
@@ -45,9 +73,10 @@ shutting down
 This problem is caused by the user-agent. <br>
 If you use for instance VLC ("VLC/2.2.6 LibVLC/2.2.6"), the stream works
 
-## License
+## 📜 License
 
-[GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html)
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+
 
 
 
