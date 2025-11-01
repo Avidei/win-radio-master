@@ -2,7 +2,7 @@
 
 A simple Windows (x32/x64) command-line script for recording internet radio streams — powered by [**streamripper**](https://github.com/streamripper/streamripper).  
 
-<p align="center">
+<p align="left">
   <img src="img/radio_records.png" alt="radio_records" width="400">
 </p>
 
