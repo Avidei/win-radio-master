@@ -1,86 +1,60 @@
-# 🎧 win-radio-master
+# win-radio-master
 
-A simple Windows (x32/x64) command-line script for recording internet radio streams — powered by [**streamripper**](https://github.com/streamripper/streamripper).  
+A small batch script for Windows (x32 and x64) that records internet radio streams. The actual recording is done by [streamripper](https://github.com/streamripper/streamripper); the script just wraps it so you can pick a station from a menu.
 
 <p align="left">
   <img src="img/radio_records.png" alt="radio_records" width="400">
 </p>
 
 > [!WARNING]
-> ⚠️ Use this script **only** for downloading content *not protected by copyright*.
+> Only use this to record content that isn't protected by copyright.
 
----
+## Usage
 
-## 🚀 Features
-- Works on both **Windows x32/x64**
-- Uses **streamripper** for downloading radio streams
-- Saves configuration automatically to `%userprofile%\radio_save_dir`
-- Supports adding custom radio stations
+Clone the repo (or just download it as a zip):
 
----
-
-## 🧭 How to Use
-
-### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Avidei/win-radio-master.git
 cd win-radio-master
 ```
 
-### 2️⃣ Run the script
-```bash
-Double-click win-radio-master.bat
+Then double-click `win-radio-master.bat`.
+
+On the first run it asks where to save recordings and stores that choice in `%userprofile%\radio_save_dir`. If something goes wrong later, delete that file and start the script again.
+
+If streamripper isn't installed, the script opens its download page. Close the Command Prompt, install `streamripper-windows-installer-<version>.exe`, and run the script again. Pick a station from the list and it will open in your default browser and start recording.
+
+To stop, close the Command Prompt window.
+
+## Adding your own stations
+
+Open the `.bat` file and add three things:
+
+```batch
+::TITLE
+echo [{symbol}] {name of radiostation}
+
+::CHECK
+Add {symbol} to the end of the section
+
+::URL
+IF %startradio%=={symbol} SET url={radiostation_url}
 ```
 
-### 3️⃣ Configure and record
+`{symbol}` is whatever key you want to press to select the station.
 
-* Choose a directory to save streams (config is stored in `%userprofile%\radio_save_dir`)  
-  → Delete this config if any issue occurs and rerun the script
+## Known issues
 
-* If you don’t have **streamripper**, the script will open its download page
+### error -6
 
-* Close Command Prompt, download and install `streamripper-windows-installer-{any_version}.exe`
-
-* Rerun the script and select a radio station  
-  → It will open in your default browser and start recording automatically
-
-* To stop the program — just close the Command Prompt window
-
-
-## 🧩 Add Custom Radio Stations
-
-> [!NOTE]  
-> To add a new radio station, edit your `.bat` file:
-> ```batch
-> ::TITLE
-> echo [{symbol}] {name of radiostation}
->
-> ::CHECK
-> Add {symbol} to the end of section
->
-> ::URL
-> IF %startradio%=={symbol} SET url={radiostation_url}
-> ```
-
-
-## ⚠️ Known Issues
-
-### ❌ `error -6`
 ```text
 error -6 [SR_ERROR_CANT_RESOLVE_HOSTNAME]
 bye..
 shutting down
 ```
 
-This problem is caused by the user-agent. <br>
-If you use for instance VLC ("VLC/2.2.6 LibVLC/2.2.6"), the stream works
+This comes from the user-agent streamripper sends. Some streams only work with a different one. For example, the same stream plays fine when the user-agent is VLC's ("VLC/2.2.6 LibVLC/2.2.6").
 
-## 📜 License
+## License
 
-This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
-
-
-
-
-
-
+GPL v3. See the [license text](https://www.gnu.org/licenses/gpl-3.0.html).
